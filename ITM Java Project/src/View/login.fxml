@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.maincontroller">
+   <children>
+      <Label layoutX="90.0" layoutY="153.0" prefHeight="31.0" prefWidth="187.0" text="Username" />
+      <Label layoutX="88.0" layoutY="232.0" prefHeight="31.0" prefWidth="187.0" text="Password" />
+      <TextField fx:id="txtusername" layoutX="324.0" layoutY="153.0" promptText="username" />
+      <PasswordField fx:id="txt_password" layoutX="324.0" layoutY="235.0" promptText="password" />
+      <Button layoutX="291.0" layoutY="362.0" mnemonicParsing="false" onAction="#ah_Login" text="Login" />
+      <Label layoutX="175.0" layoutY="57.0" prefHeight="45.0" prefWidth="256.0" text="Movie Ticketing System" />
+      <Label layoutX="355.0" layoutY="436.0" prefHeight="31.0" prefWidth="284.0" text="Developed By Arun Hundia(A20380407)" />
+   </children>
+</AnchorPane>

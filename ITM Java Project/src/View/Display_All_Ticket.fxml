@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Book_ticketController">
+   <children>
+      <Button layoutX="73.0" layoutY="76.0" mnemonicParsing="false" onAction="#display_ticket" text="Show Ticket" />
+      <TableView fx:id="Dis_Ticket" layoutX="14.0" layoutY="132.0" prefHeight="584.0" prefWidth="1023.0">
+        <columns>
+          <TableColumn fx:id="dis_tckt_id" prefWidth="75.0" text="Ticket ID" />
+          <TableColumn fx:id="dis_movie_id" prefWidth="219.0" text="Movie ID" />
+            <TableColumn fx:id="dis_screen" prefWidth="53.0" text="Screen" />
+            <TableColumn fx:id="dis_cust_name" prefWidth="265.0" text="Customer Name" />
+            <TableColumn fx:id="dis_show_date" prefWidth="95.0" text="Show Date" />
+            <TableColumn fx:id="dis_show_time" prefWidth="100.0" text="Show Time" />
+            <TableColumn fx:id="dis_book_seats" prefWidth="105.0" text="Seats Booked" />
+            <TableColumn fx:id="dis_cost" prefWidth="110.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

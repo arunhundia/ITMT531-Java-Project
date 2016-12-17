@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin">
+   <children>
+      <TableView fx:id="show_table" layoutX="36.0" layoutY="148.0" prefHeight="577.0" prefWidth="829.0">
+        <columns>
+          <TableColumn fx:id="show_id_view" prefWidth="75.0" text="Show ID" />
+          <TableColumn fx:id="movie_id_view" prefWidth="180.0" text="Movie ID" />
+            <TableColumn fx:id="screen_id_view" prefWidth="161.0" text="Screen ID" />
+            <TableColumn fx:id="date_show_view" prefWidth="163.0" text="Date" />
+            <TableColumn fx:id="show_time_view" prefWidth="130.0" text="Time" />
+            <TableColumn fx:id="seats_available_view" minWidth="0.0" prefWidth="120.0" text="Available Seats" />
+        </columns>
+      </TableView>
+      <Button layoutX="53.0" layoutY="81.0" mnemonicParsing="false" onAction="#display_all_show" text="Display Show List" />
+      <Label layoutX="803.0" layoutY="25.0" prefHeight="21.0" prefWidth="56.0" text="Admin" />
+      <Label layoutX="348.0" layoutY="71.0" prefHeight="37.0" prefWidth="214.0" text="SHOW LIST">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

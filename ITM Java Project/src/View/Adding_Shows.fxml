@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Add_show_contoller">
+   <children>
+      <Label fx:id="ah_insert_movie_id" layoutX="73.0" layoutY="108.0" prefHeight="31.0" prefWidth="91.0" text="Movie ID" />
+      <Label layoutX="73.0" layoutY="161.0" prefHeight="31.0" prefWidth="91.0" text="Screen" />
+      <Label layoutX="73.0" layoutY="220.0" prefHeight="31.0" prefWidth="91.0" text="Date" />
+      <Label layoutX="73.0" layoutY="279.0" prefHeight="31.0" prefWidth="91.0" text="Time" />
+      <Label layoutX="73.0" layoutY="329.0" prefHeight="31.0" prefWidth="107.0" text="Available Seats" />
+      <ComboBox fx:id="ah_insert_Movie_ID" layoutX="225.0" layoutY="111.0" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="ah_insert_screen" layoutX="225.0" layoutY="161.0" onAction="#Show_Available_Seats_Data" prefHeight="31.0" prefWidth="218.0" />
+      <DatePicker fx:id="ah_insert_show_Date" layoutX="225.0" layoutY="220.0" />
+      <TextField fx:id="ah_insert_show_Time" layoutX="225.0" layoutY="279.0" prefHeight="31.0" prefWidth="218.0" />
+      <Button layoutX="132.0" layoutY="443.0" mnemonicParsing="false" onAction="#insert_shows" text="Add" />
+      <Button fx:id="close_button" layoutX="343.0" layoutY="443.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <ComboBox fx:id="ah_insert_available_seats" layoutX="225.0" layoutY="329.0" prefHeight="31.0" prefWidth="218.0" />
+      <Label layoutX="179.0" layoutY="28.0" prefHeight="51.0" prefWidth="225.0" text="Adding New Shows">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="28.0" prefHeight="21.0" prefWidth="55.0" text="Admin" />
+   </children>
+</AnchorPane>

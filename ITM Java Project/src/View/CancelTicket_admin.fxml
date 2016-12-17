@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="320.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin">
+   <children>
+      <Button layoutX="119.0" layoutY="235.0" mnemonicParsing="false" onAction="#admin_cancel_ticket" text="Cancel Ticket" />
+      <TextField fx:id="ticket_id" layoutX="240.0" layoutY="134.0" />
+      <Label layoutX="126.0" layoutY="134.0" prefHeight="31.0" prefWidth="86.0" text="Ticket ID" />
+      <Button fx:id="close_button" layoutX="311.0" layoutY="235.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="125.0" text="Exit" />
+      <Label layoutX="173.0" layoutY="65.0" prefHeight="40.0" prefWidth="212.0" text="Canceling Ticket">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="27.0" prefHeight="21.0" prefWidth="60.0" text="Admin" />
+   </children>
+</AnchorPane>

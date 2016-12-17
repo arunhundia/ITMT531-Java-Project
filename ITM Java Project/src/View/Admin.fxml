@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin">
+   <children>
+      <Button fx:id="add_movie" layoutX="80.0" layoutY="113.0" mnemonicParsing="false" onAction="#Add_movie" prefHeight="31.0" prefWidth="111.0" text="Add Movie" />
+      <Button fx:id="add_screen" layoutX="80.0" layoutY="172.0" mnemonicParsing="false" onAction="#Add_screen" prefHeight="31.0" prefWidth="111.0" text="Add Screen" />
+      <Button fx:id="add_shows" layoutX="80.0" layoutY="235.0" mnemonicParsing="false" onAction="#Add_show" prefHeight="31.0" prefWidth="111.0" text="Add Shows" />
+      <Button layoutX="80.0" layoutY="296.0" mnemonicParsing="false" onAction="#Remove_Movie" prefHeight="31.0" prefWidth="111.0" text="Delete Movie" />
+      <Button layoutX="80.0" layoutY="349.0" mnemonicParsing="false" onAction="#Remove_Show" prefHeight="31.0" prefWidth="117.0" text="Delete Show" />
+      <Button layoutX="260.0" layoutY="113.0" mnemonicParsing="false" onAction="#display_cancel_ticket" prefHeight="31.0" prefWidth="130.0" text="Cancel Ticket" />
+      <Button layoutX="260.0" layoutY="172.0" mnemonicParsing="false" onAction="#ah_display_movie" prefHeight="31.0" prefWidth="130.0" text="Movie List" />
+      <Button layoutX="260.0" layoutY="235.0" mnemonicParsing="false" onAction="#ah_display_show" prefHeight="31.0" prefWidth="130.0" text="Show List" />
+      <Label layoutX="151.0" layoutY="54.0" prefHeight="40.0" prefWidth="189.0" text="Admin Functionalities">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

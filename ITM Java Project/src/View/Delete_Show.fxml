@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="292.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin">
+   <children>
+      <Button layoutX="88.0" layoutY="228.0" mnemonicParsing="false" onAction="#Delete_show" prefHeight="31.0" prefWidth="116.0" text="Delete" />
+      <Button fx:id="close_button" layoutX="294.0" layoutY="228.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="116.0" text="Exit" />
+      <Label layoutX="67.0" layoutY="138.0" prefHeight="31.0" prefWidth="106.0" text="Enter Show ID" />
+      <TextField fx:id="delete_show_id" layoutX="207.0" layoutY="138.0" />
+      <Label layoutX="157.0" layoutY="61.0" prefHeight="36.0" prefWidth="168.0" text="Deleting Show">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="27.0" text="Admin" />
+   </children>
+</AnchorPane>

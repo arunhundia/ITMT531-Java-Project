@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin">
+   <children>
+      <Label layoutX="171.0" layoutY="64.0" prefHeight="48.0" prefWidth="251.0" text="        Movie List" textAlignment="CENTER" textFill="#222020">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="List_Movie" layoutX="41.0" layoutY="135.0" prefHeight="435.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="view_movie_id" prefWidth="84.0" text="Movie ID" />
+          <TableColumn fx:id="view_movie_name" prefWidth="249.0" text="Movie Name" />
+            <TableColumn fx:id="view_director" minWidth="0.0" prefWidth="193.0" text="Director" />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="65.0" mnemonicParsing="false" onAction="#display_movie" prefHeight="32.0" prefWidth="94.0" text="View" />
+      <Label layoutX="527.0" layoutY="24.0" prefHeight="21.0" prefWidth="49.0" text="Admin" />
+   </children>
+</AnchorPane>

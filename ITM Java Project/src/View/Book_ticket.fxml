@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Book_ticketController">
+   <children>
+      <Label layoutX="46.0" layoutY="199.0" prefHeight="35.0" prefWidth="108.0" text="Movie Name" />
+      <Label layoutX="46.0" layoutY="154.0" prefHeight="35.0" prefWidth="119.0" text="Customer Name" />
+      <Label layoutX="46.0" layoutY="296.0" prefHeight="35.0" prefWidth="108.0" text="Screen " />
+      <Label layoutX="46.0" layoutY="246.0" prefHeight="35.0" prefWidth="108.0" text="Date" />
+      <Label layoutX="46.0" layoutY="348.0" prefHeight="35.0" prefWidth="108.0" text="Time" />
+      <Label layoutX="46.0" layoutY="404.0" prefHeight="35.0" prefWidth="108.0" text="Total Seats" />
+      <Label layoutX="46.0" layoutY="457.0" prefHeight="35.0" prefWidth="108.0" text="Cost" />
+      <TextField fx:id="cust_name" layoutX="193.0" layoutY="156.0" />
+      <ComboBox fx:id="movie_name_db" layoutX="193.0" layoutY="201.0" onAction="#show_date" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="combo_show_date" layoutX="193.0" layoutY="248.0" onAction="#show_screen" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="combo_screen_id" layoutX="193.0" layoutY="298.0" onAction="#show_time" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="combo_show_time" layoutX="193.0" layoutY="350.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="combo_total_seats" layoutX="193.0" layoutY="406.0" onAction="#movie_cost" prefHeight="31.0" prefWidth="187.0" />
+      <Label fx:id="symbol" layoutX="193.0" layoutY="464.0" prefHeight="21.0" prefWidth="20.0" />
+      <Label fx:id="cost" layoutX="219.0" layoutY="464.0" prefHeight="21.0" prefWidth="76.0" />
+      <Button layoutX="75.0" layoutY="557.0" mnemonicParsing="false" onAction="#Insert_ticket" prefHeight="31.0" prefWidth="119.0" text="Book" />
+      <Button fx:id="close_button" layoutX="297.0" layoutY="557.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="108.0" text="Exit" />
+      <Label layoutX="140.0" layoutY="80.0" prefHeight="48.0" prefWidth="173.0" text="Book Ticket">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="26.0" prefHeight="21.0" prefWidth="62.0" text="Cashier" />
+   </children>
+</AnchorPane>
